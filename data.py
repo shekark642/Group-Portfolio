@@ -3,7 +3,7 @@ def runtime():
     name = "Repl"
     doa = "October 30"
     job = "Runtime Link"
-    embed = "https://repl.it/@shekark642/playground#main.py"
+    embed = "https://playground.shekark642.repl.run"
     info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "embed": embed}
     return info
 

@@ -4,12 +4,12 @@
       margin: 10px;
 }
 
-.center{
+#center{
   float: center;
   margin: auto;
-
+  text-align: center;
   color: #b32400;
-  font-size: 6;
+  font-size: 60;
 }
 
 #tableOne {
