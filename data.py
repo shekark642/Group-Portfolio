@@ -1,3 +1,12 @@
+def runtime():
+    greeting = "Hey, Hey, Hey!"
+    name = "Repl"
+    doa = "October 30"
+    job = "Runtime Link"
+    embed = "https://repl.it/@shekark642/playground#main.py"
+    info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "embed": embed}
+    return info
+
 def playdata():
     answer1 = "Hey, Hey, Hey!"
     #name = "John Mortensen"
@@ -16,6 +25,7 @@ def answersdata(toAppend):
 def testdata():
     parent_list = [{'A': 'val1', 'B': 'val2'}, {'C': 'val3', 'D': 'val4'}]
     return parent_list
+
 
 
 board = {

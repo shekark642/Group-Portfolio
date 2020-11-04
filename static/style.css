@@ -2,22 +2,16 @@
       width: 100px;
       float: center;
       margin: 10px;
-  }
-#headerOne {
-        
-  top: 10px;
-  padding: 80px ;
-  text-align: center;
-  color: #b32400;
-      
 }
+
 .center{
   float: center;
   margin: auto;
-  text-align: center;
+
   color: #b32400;
-  font-size: 60;
+  font-size: 6;
 }
+
 #tableOne {
       
       top: 70px;
@@ -40,16 +34,15 @@
 .pairShareTwo{
   background-color: rgb(250, 226, 165);
 }
-html, body {
-  margin: 0;
-  height: 100%;
-  color: green;
+
+
+#h1{
+  font-size: 29em;
 }
 
-h1{
-  font-size: 2.6em;
+#headerOne{
+front-size: 10px;
 }
-
 
 .fa{
   font-size: 1em;
@@ -79,20 +72,28 @@ h1{
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
 }
-p {
-  text-align: center;
-  font-size: -1em
+
+
+#col-4 {
+  font-size: 50em
 }
-col-4 {
-  font-size: -3em
+
+
+#col-8 {
+   position: center;
+
 }
 
 #background {
-  right-margin: auto;
-  left-margin: auto;
+z-index:-10;
+position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  z-index: -10;
-  top: 50%;
-  float: left;
-  position: absolute;
+  height: 100%;
+  overflow: hidden;
+object-fit: cover;
+float: top;
 }
+
