@@ -38,3 +38,7 @@ board = {
     "a2": "wp1", "b2": "wp2", "c2": "wp3", "d2": "wp4", "e2": "wp5", "f2": "wp6", "g2": "wp7", "h2": "wp8",
     "a1": "WR1n", "b1": "WN1", "c1": "WB1", "d1": "WQ1", "e1": "WK1n", "f1": "WB2", "g1": "WN2", "h1": "WR2n"
 }
+
+greetme = {
+    "myname": "Shekar", "myage": "16", "mybruh": "bruh", "hello": "ok"
+}
