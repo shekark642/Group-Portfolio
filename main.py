@@ -19,9 +19,9 @@ def chessJS():
 
   return render_template("chessJs.html")
 
-@app.route("/chessPush")#for the pritn chess board from dictonaries
-def chessPush():
-    return render_template("chessPush.html", board=board)
+@app.route("/Login")#for the pritn chess board from dictonaries
+def Login():
+    return render_template("Login.html", board=board)
 
 @app.route("/index")#for the dragable chess file
 def index():
