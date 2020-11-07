@@ -46,6 +46,7 @@ def journals():
 def all_route():
     return render_template("taskall.html", datalist=data.alldata())
 
+
 if __name__ == "__main__":
     #runs the application on the repl development server
     app.run(debug=True)
