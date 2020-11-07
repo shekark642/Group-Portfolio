@@ -56,15 +56,15 @@ def project():
 
 def project1():
     date = "9/30"
-    name = "car-animation"
-    embedlink = "embed-link"
-    linkout = "https://repl.it/@shekark642/playground?lite=true"
+    name = "Car Animation"
+    embedlink = "https://repl.it/@shekark642/playground?lite=true"
+    linkout = "https://repl.it/@shekark642/playground"
     info = {"date": date, "name": name, "embedlink": embedlink, "linkout": linkout}
     return info
 
 def project2():
     date = "10/6"
-    name = "username-password"
+    name = "Username Password"
     embedlink = "https://repl.it/@shekark642/username-password?lite=true"
     linkout = "https://repl.it/@shekark642/username-password"
     info = {"date": date, "name": name, "embedlink": embedlink, "linkout": linkout}
@@ -72,7 +72,7 @@ def project2():
 
 def project3():
     date = "10/23"
-    name = "fortune-teller"
+    name = "Fortune Teller"
     embedlink = "https://repl.it/@shekark642/fortune-teller?lite=true"
     linkout = "https://repl.it/@shekark642/fortune-teller"
     info = {"date": date, "name": name, "embedlink": embedlink, "linkout": linkout}

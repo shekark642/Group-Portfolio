@@ -3,25 +3,118 @@
 {% extends "base.html" %}
 {% block head %}
 <title>All | People </title>
+
+
+
 <link href="/static/style.css" rel="stylesheet" type="text/css" />
 {% endblock %}
 {% block content %}
+
+<div>
+    <img src= "https://media0.giphy.com/media/kEdI683LJtrGmTVVCM/giphy.gif?cid=ecf05e473mmappalvg3iv4mcjunynqtrdxk1745lz75291ms&rid=giphy.gif" style = "position: fill; width: 1535px; height: 650px" alt=HELLO>
+    <div class="top-left">Pair-Share: Shekar, Colin, Devam</div>
+    <div class="top-left2">Pair-Share Journal: <a target = "_blank" href="https://padlet.com/kolinszeto/ir8kqoip55dsdu2d"> Padlet</a></div>
+    <div class="bottom-left"><u>Personal Repositories:</u></div>
+
+</div>
+
+
+
 {% for data in datalist: %}
 {% set doa = data["date"] %}
 {% set name = data["name"] %}
 {% set link = data["embedlink"] %}
 {% set linkout = data["linkout"] %}
 {% set gist = data["gist"] %}
+
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  height: 60px;
+  left: 30px;
+  padding-bottom: 200px;
+  color:white;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 90px;
+
+}
+
+.top-left {
+  position: absolute;
+  top: 50px;
+  left: 16px;
+  font-size:60px;
+  color:magenta;
+
+}
+
+.top-left2 {
+  position: absolute;
+  top: 120px;
+  left: 16px;
+  font-size:60px;
+  color:pink;
+
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .button {
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 20px;
+  cursor: pointer;
+}
+</style>
+    </body>
+
+<body style=" background-color:green">
+</head>
+
+
 <h1>{{greeting}} <span style='color:orangered;'></span></h1>
 <ol>
-    <li>Due date: <span style='color:midnightblue;'>{{doa}}</span></li>
-    <li>Task: <span style='color:midnightblue;'>{{name}}</span></li>
-    {% if 'embed' in data %}
-    <div class="embed-responsive embed-responsive-4by3">
-        <iframe class="embed-responsive-item" src={{link}}></iframe>
+
+    <h1 style = "color:white  ; margin-left:auto ; margin-right:auto ; width:980px ; font-size:20px;">Due date: {{doa}}</h1>
+    <h1 style = "color:white   ; margin-left:auto ; margin-right:auto ; width:980px ; font-size:20px;">Project name: {{name}}</h1>
+
+    <div class="row justify-content-center" style="margin-top: 1vw;">
+        <div class="col-8">
+            <iframe frameborder="0" width="100%" height="620px" src={{link}}></iframe>
+        </div>
     </div>
-    {% endif %}
-    <h1 style = "color:white ; height:140px ; margin-left:auto ; margin-right:auto ; width:1000px ; font-size:20px;" > Click to see repository: {{name}} <form method="get" action={{embedlink}}> <button type="submit">Visit Code</button> </form> </h1>
+
+    <h1 style = "color:white ; height:150px ; margin-left:auto ; margin-right:auto ; width:980px ; font-size:20px;" > <form method="get" action={{linkout}}> <button type="submit">Visit Code</button> </form> </h1>
 
     {% if 'gist' in data %}
     <li>{{job}} link: <span style='color:midnightblue;'>{{gist}}</span></li>
