@@ -42,6 +42,10 @@ def addition():
 def journals():
   return render_template("journals.html",repl="repl of website", website ="link to personal website")#allows to define the text that is hyperlinked on the the personal journals
 
+@app.route("/all")
+def all_route():
+    return render_template("taskall.html", datalist=data.alldata())
+
 if __name__ == "__main__":
     #runs the application on the repl development server
     app.run(debug=True)

@@ -42,3 +42,41 @@ board = {
 greetme = {
     "myname": "Shekar", "myage": "16", "mybruh": "bruh", "hello": "ok"
 }
+
+
+def project():
+    greeting = "Hey, Hey, Hey!"
+    name = "Billards Balls"
+    doa = "Week 2"
+    job = "Testing Print with Color"
+    description = "type in 8 into the terminal and press enter to run the program"
+    embed = "https://repl.it/@colinszeto/Python-Hello-Series?lite=true"
+    info = {"greeting": greeting, "name": name, "doa": doa, "job": job, "description": description, "embed": embed}
+    return info
+
+def project1():
+    date = "9/30"
+    name = "car-animation"
+    embedlink = "embed-link"
+    linkout = "https://repl.it/@shekark642/playground?lite=true"
+    info = {"date": date, "name": name, "embedlink": embedlink, "linkout": linkout}
+    return info
+
+def project2():
+    date = "10/6"
+    name = "username-password"
+    embedlink = "https://repl.it/@shekark642/username-password?lite=true"
+    linkout = "https://repl.it/@shekark642/username-password"
+    info = {"date": date, "name": name, "embedlink": embedlink, "linkout": linkout}
+    return info
+
+def project3():
+    date = "10/23"
+    name = "fortune-teller"
+    embedlink = "https://repl.it/@shekark642/fortune-teller?lite=true"
+    linkout = "https://repl.it/@shekark642/fortune-teller"
+    info = {"date": date, "name": name, "embedlink": embedlink, "linkout": linkout}
+    return info
+
+def alldata():
+    return [project1(), project2(), project3()]
