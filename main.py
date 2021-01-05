@@ -5,19 +5,12 @@ from data import board
 #create a Flask instance
 app = Flask(__name__)
 
-#InfoDb = []
 
 #connects default URL of server to a python function
-@app.route('/')
+@app.route("/")
 def home():
-    #function uses Flask import (Jinga) to render HTML
-    #data is passed as a parameter
-    return render_template("home.html")#home has to be under templates
+    return render_template("home.html")
 
-@app.route("/chessJs")#for the dragable chess file
-def chessJS():
-
-  return render_template("chessJs.html")
 
 @app.route("/Login")#for the pritn chess board from dictonaries
 def Login():

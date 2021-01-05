@@ -1,38 +1,36 @@
 <!DOCTYPE html> <!-- this file will contain the nav bar and -->
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta charset="utf-8">
-    <title>Shekar Krishnamoorthy portfolio</title>
-    <link href="style.css" rel="stylesheet" type="style/css" />
-  </head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <title>Shekar Krishnamoorthy portfolio</title>
+  <link href="style.css" rel="stylesheet" type="style/css" />
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">{{HOME}}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+    <div class="navbar-nav">
+      <a class="nav-link active" href="/">Home Page</a>
+      <a class="nav-link active" href="/every">Journals</a>
+
+      <a class="nav-link active" href="index">Login</a>
+    </div>
+  </div>
+</nav>
+
+{% block content %}{% endblock %}
+</body>
 
 
-  <body>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">{{HOME}}</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-
-        <div class="navbar-nav">
-          <a class="nav-link active" href="/">Home Page</a>
-          <a class="nav-link active" href="journals">Journals</a>
-          <a class="nav-link active" href="index">Login</a>
-            <a class="nav-link active" href="/all">All projects</a>
-
-
-        </div>
-      </div>
-    </nav>
-
-
-    {% block content %}{% endblock %}
-  </body>
 
 
 
